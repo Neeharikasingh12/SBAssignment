@@ -1,0 +1,13 @@
+.centeralign {
+    color: white;
+    text-align: center;
+    margin-top: 25%;
+}
+
+a:hover {
+    color: black;
+}
+
+a {
+    color: black;
+}

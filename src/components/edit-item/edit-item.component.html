@@ -1,0 +1,59 @@
+<h1 mat-dialog-title>Edit {{data.title}}</h1>
+<div mat-dialog-content>
+    <mat-grid-list cols="4" rowHeight="50px">
+        <mat-grid-tile [colspan]="1" class="left-align">
+            Name*
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+            <input class="form-control" id="name" name="name" [(ngModel)]="item.name" required maxlength="60"
+                pattern=".*\S.*">
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" class="left-align">
+            Description*
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+            <textarea class="form-control" id="description" name="description" [(ngModel)]="item.description" required
+                maxlength="400" style="height: 40px;">
+        </textarea>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="50px">
+        <mat-grid-tile [colspan]="1" class="left-align">
+            Type*
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+            <mat-select class="form-control" [(ngModel)]="item.type" id="type" name="type">
+                <mat-option *ngFor="let type of availableTypes" [value]="type">{{type}}</mat-option>
+            </mat-select>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" class="left-align">
+            Price*
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+            <input class="form-control" id="price" name="price" [(ngModel)]="item.price" required type="number" min="0">
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="50px">
+        <!-- <mat-grid-tile [colspan]="1" class="left-align">
+            Product Image*
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+            <input class="form-control" id="img" name="img" [(ngModel)]="item.img" required maxlength="60"
+                pattern=".*\S.*">
+        </mat-grid-tile> -->
+        <mat-grid-tile [colspan]="1" class="left-align">
+            Discount(%)
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+            <input class="form-control" id="discount" name="discount" [(ngModel)]="item.discount" type="number" min="0">
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="50px">
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="50px">
+    </mat-grid-list>
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-raised-button class="actionBtn" (click)="close()">Cancel</button>
+    <button mat-raised-button class="actionBtnS" (click)="editItem()">Update</button>
+</div>

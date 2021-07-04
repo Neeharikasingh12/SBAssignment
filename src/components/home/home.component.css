@@ -1,0 +1,56 @@
+:host /deep/ .carousel-indicators {
+    left: 35% !important;
+}
+
+nav {
+    background-color: #ce37f1 !important;
+}
+
+:host /deep/ .mat-icon {
+    color: #ce37f1 !important;
+}
+
+:host /deep/ .mat-mini-fab.mat-accent:disabled {
+    background-color: #ce37f1 !important; 
+}
+
+:host /deep/ .mat-mini-fab.mat-accent {
+    background-color: white !important;
+}
+
+:host /deep/ .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+    opacity: 1;
+}
+
+:host /deep/ .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    opacity: 0.5;
+}
+
+:host /deep/ .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+:host /deep/ .navbar-light .navbar-brand, .navbar-light .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.padclass {
+    justify-content: center;
+}
+.cardCss {
+    margin: 25px;
+    border: 2px solid rgba(225, 153, 241);
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 300px;
+    overflow: auto;
+}
+
+.cardCss:hover{
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+

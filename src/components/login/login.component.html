@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="center">
+        <h2>WELCOME TO SHOP BRIDGE</h2>
+        <P style="font-style: italic;">Accquire the BEST !</P>
+
+        <div class="parentLogin">
+            <div class="loginForm">
+                <h5></h5>
+                <div class="example-container">
+                    <mat-form-field>
+                        <input matInput placeholder="Username" [(ngModel)]="username" (keydown)="checkevent($event)" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Password" type="password" [(ngModel)]="password" (keydown)="checkevent($event)" required>
+                    </mat-form-field>
+
+                    <button mat-raised-button class="loginbutton" (click)="validateUser()"
+                        [disabled]="!username || !password">
+                        LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

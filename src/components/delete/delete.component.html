@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Confirmation to Delete {{data.title}}</h1>
+<div mat-dialog-content>
+  <p>Are you sure, You want to delete {{data.item.name}} permanently ?</p>
+</div>
+<div mat-dialog-actions style="float: right;">
+  <button mat-raised-button class="actionBtn" (click)="close()">Cancel</button>
+  <button mat-raised-button class="actionBtnS" (click)="delete()">Yes</button>
+</div>

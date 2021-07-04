@@ -1,0 +1,20 @@
+.actionBtn {
+    background-color: black;
+    color : white;
+}
+
+.actionBtnS {
+    background-color: #ce37f1;
+    color: white;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #ced4da;
+    color: black;
+}
+
+.left-align ::ng-deep .mat-figure {
+    justify-content: left;
+    padding-left: 1vw;
+}
